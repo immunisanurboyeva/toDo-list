@@ -1,0 +1,169 @@
+:root{
+    --btn: #1E6F9F;
+    --blue: #4EA8DE;
+    --purple: #8284FA;
+    --purpleDark: #5E60CE;
+    --gray: #262626;
+    --lightGray: #333333;
+    --black: #0D0D0D;
+    --lightBlack: #1A1A1A;
+    --white: #F2F2F2;
+}
+body{
+    background: var(--black);
+    height: 100vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background: var(--black);
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__title{
+    color: var(--blue);
+    margin: 0 auto;
+    width: max-content;
+    /* transform: translate(0, 5rem); */
+    font-size: 40px;
+}
+.purple{
+    color: var(--purple);
+}
+main{
+    background: var(--lightBlack);
+    height: calc(100vh - 25vh);
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.toDo__wrapper{
+    /* background-color: #ffffff41; */
+    width: 50rem;
+    margin: auto;
+    gap: 10px;
+    padding: 5px;
+    transform: translate(0, -50px);
+}
+.toDo__yaratish{
+    /* background-color: #c0e5ea54; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 2px;
+}
+#reja__yaratish{ 
+    flex-grow: 3;
+    padding: 10px 15px;
+    border-radius: 9px;
+    border: none;
+    color: var(--white);
+    background-color: var(--gray);
+    border: 2px solid var(--lightGray);
+}
+button{
+    /* flex-grow: 1; */
+    width: 120px;
+    height: 45px;
+    display: flex;
+    border: none;
+    gap: 7px;
+    font-weight: 600;
+    color: var(--white) ;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--btn);
+}
+
+.list__wrapper{
+    /* background-color: #ffffff17; */
+    margin-top: 4rem;
+}
+.toDo__hisobot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    gap: 4px;
+    height: 2rem;
+}
+#Yaratildi{
+    color: var(--blue);
+}
+.soni{
+    font-size: 12px;
+    padding: 2px 6px;
+    font-weight: 400;
+    width: max-content;
+    color: var(--white);
+    border-radius: 10px;
+    background-color: var(--lightGray);
+}
+#Bajarilgan{
+    color: var(--purple);
+}
+
+ul{
+    gap: 10px;
+    height: 60vh;
+    /* background-color: #fff; */
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    -webkit-box-shadow: -1px -5px 4px -2px rgba(34, 60, 80, 0.433) inset;
+    -moz-box-shadow: -1px -5px 4px -2px rgba(34, 60, 80, 0.455) inset;
+    box-shadow: -1px -5px 4px -2px rgba(34, 60, 80, 0.477) inset;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+
+    color: var(--white);
+    list-style: none;
+    margin-top: 14px;
+    background-color: var(--lightGray);
+    transform: translate(-32px, 0);
+    width: 49.5rem;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 2px solid var(--lightGray);
+    /* background-color: #ffffff83; */
+}
+
+/* input:checked{
+    accent-color: var(--purpleDark);
+    border-radius: 50%;
+} */
+input{
+    cursor: pointer;
+}
+li input{
+    -webkit-appearance: none;  
+    -moz-appearance: none;
+    appearance: none;
+
+    min-width: 20px;
+    min-height: 20px;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    background-color: var(--gray); /* default bosilishdan oldingi rang */
+    cursor: pointer;
+    position: relative;
+}
+li input:checked{
+    background-color: var(--purpleDark);
+    border: 2px solid var(--purpleDark);
+    
+}
