@@ -32,14 +32,3 @@ form. addEventListener(' submit', (e) => {
     input.value = ""
     btn.setAttribute(' disabled', 'true')
 })
-
-
-/*  
-echo "# toDo-list" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/immunisanurboyeva/toDo-list.git
-git push -u origin main
-*/
