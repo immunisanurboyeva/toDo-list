@@ -1,18 +1,3 @@
-/* 
-let btn = document.querySelector('#add');
-let ul = document.querySelector('ul');
-
-let input = document.querySelector('input');
-
-btn.addEventListener('click', ()=>{
-    if( input.value !== "" && input.value !==" " ) {
-        const li = document.createElement('li');
-        li.textContent = input.value;
-        ul.appendChild(li);
-    }
-})
-*/
-
 let yaratish_input = document.querySelector('#reja__yaratish');
 let btn_yatarish = document.querySelector('.btn__yaratish');
 let list = document.querySelector('ul');
@@ -42,7 +27,3 @@ btn_yatarish.addEventListener('click', function main(e) {
         yaratish_input.value = ""
     }
 })
-
-// li>input.addEventListener('chacked'){
-
-// }
